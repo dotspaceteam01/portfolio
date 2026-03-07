@@ -87,7 +87,8 @@ const HeroSection = () => {
 
           <a
             href="#projects"
-            className="px-8 py-4 rounded-xl font-semibold text-primary-foreground bg-primary hover:brightness-110 transition-all duration-300 glow-border"
+             className="px-8 py-4 rounded-xl font-semibold text-white bg-gradient-to-r from-[#4F63FF] via-[#5F8CFF] to-[#79C2FF] hover:brightness-110 transition-all duration-300 shadow-lg"
+
           >
             View Our Work
           </a>

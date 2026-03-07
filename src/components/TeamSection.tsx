@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Linkedin } from "lucide-react";
 
 const team = [
-  { name: "Nirupam Asmar", linkedin: "https://www.linkedin.com/in/nirupam-asmar-05695425a" },
+  { name: "Nirupam Asmar", linkedin: "https://www.linkedin.com/in/nirupam-asmar-05695425a" , image: "/pic/niru.jpeg",  position: "object-[50%_12%]" },
   { name: "Utkarsh Shukla", linkedin: "https://www.linkedin.com/in/t-utkarsh-shukla/" ,image: "/pic/utk.jpeg"},
   { name: "Sandeep Reddy", 
     linkedin: "https://www.linkedin.com/in/sandeep-reddy-6877b6223",
@@ -53,10 +53,10 @@ const TeamSection = () => {
               {/* Profile Image */}
 {member.image ? (
   <img
-    src={member.image}
-    alt={member.name}
-    className="w-32 h-32 rounded-full object-cover mx-auto mb-5 border-2 border-primary/40 shadow-lg transition-transform duration-300 group-hover:scale-110"
-  />
+  src={member.image}
+  alt={member.name}
+  className={`w-32 h-32 rounded-full object-cover ${member.position || "object-center"} mx-auto mb-5 border-2 border-primary/40 shadow-lg transition-transform duration-300 group-hover:scale-110`}
+/>
 ) : (
   <div className="w-32 h-32 rounded-full bg-primary/10 mx-auto mb-5 flex items-center justify-center text-primary font-display text-3xl font-bold group-hover:bg-primary/20 transition-colors">
     {member.name.split(" ").map(n => n[0]).join("")}
