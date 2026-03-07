@@ -1,22 +1,37 @@
 import { motion } from "framer-motion";
-import { Brain, Code, Cpu, Zap } from "lucide-react";
+import {
+  Brain,
+  Code,
+  Cpu,
+  Zap,
+  Smartphone,
+  Rocket,
+  Sparkles,
+  Settings,
+  CircuitBoard,
+  Eye
+} from "lucide-react";
 
 const capabilities = [
   { icon: Brain, title: "AI & LLM Systems", desc: "Multi-agent architectures, fine-tuning, and prompt engineering" },
-  
+
   { icon: Code, title: "Full-Stack Development", desc: "End-to-end web and mobile solutions with modern frameworks" },
-  
-  { icon: Cpu, title: "XR & Computer Vision", desc: "VR/AR systems, stereoscopic vision, and spatial computing" },
-  
+
+  { icon: Eye, title: "XR & Computer Vision", desc: "VR/AR systems, stereoscopic vision, and spatial computing" },
+
   { icon: Zap, title: "Workflow Automation", desc: "AI-driven task management and intelligent process automation" },
 
-  { icon: Code, title: "Mobile Apps", desc: "High-performance Android and iOS applications with modern UI/UX" },
+  { icon: Smartphone, title: "Mobile Apps", desc: "High-performance Android and iOS applications with modern UI/UX" },
 
-  { icon: Zap, title: "MVP Development", desc: "Rapid prototyping and MVP builds to validate startup ideas quickly" },
+  { icon: Rocket, title: "MVP Development", desc: "Rapid prototyping and MVP builds to validate startup ideas quickly" },
 
-  { icon: Brain, title: "AI-Powered Features", desc: "Smart automation, recommendation systems, and AI integrations" },
+  { icon: Sparkles, title: "AI-Powered Features", desc: "Smart automation, recommendation systems, and AI integrations" },
 
-  { icon: Cpu, title: "Internal Tools", desc: "Custom dashboards, automation systems, and productivity platforms" }
+  { icon: Settings, title: "Internal Tools", desc: "Custom dashboards, automation systems, and productivity platforms" },
+
+  { icon: CircuitBoard, title: "Custom PCB Design", desc: "High-performance circuit boards designed for complex electronic products." },
+
+  { icon: Cpu, title: "Embedded Hardware Systems", desc: "Complete hardware systems integrating sensors, processors, and cameras." }
 ];
 
 const AboutSection = () => {
