@@ -2,11 +2,22 @@ import { motion } from "framer-motion";
 import { Brain, Code, Cpu, Zap } from "lucide-react";
 
 const capabilities = [
-{ icon: Brain, title: "AI & LLM Systems", desc: "Multi-agent architectures, fine-tuning, and prompt engineering" },
-{ icon: Code, title: "Full-Stack Development", desc: "End-to-end web and mobile solutions with modern frameworks" },
-{ icon: Cpu, title: "XR & Computer Vision", desc: "VR/AR systems, stereoscopic vision, and spatial computing" },
-{ icon: Zap, title: "Workflow Automation", desc: "AI-driven task management and intelligent process automation" }];
+  { icon: Brain, title: "AI & LLM Systems", desc: "Multi-agent architectures, fine-tuning, and prompt engineering" },
+  
+  { icon: Code, title: "Full-Stack Development", desc: "End-to-end web and mobile solutions with modern frameworks" },
+  
+  { icon: Cpu, title: "XR & Computer Vision", desc: "VR/AR systems, stereoscopic vision, and spatial computing" },
+  
+  { icon: Zap, title: "Workflow Automation", desc: "AI-driven task management and intelligent process automation" },
 
+  { icon: Code, title: "Mobile Apps", desc: "High-performance Android and iOS applications with modern UI/UX" },
+
+  { icon: Zap, title: "MVP Development", desc: "Rapid prototyping and MVP builds to validate startup ideas quickly" },
+
+  { icon: Brain, title: "AI-Powered Features", desc: "Smart automation, recommendation systems, and AI integrations" },
+
+  { icon: Cpu, title: "Internal Tools", desc: "Custom dashboards, automation systems, and productivity platforms" }
+];
 
 const AboutSection = () => {
   return (
@@ -21,15 +32,12 @@ const AboutSection = () => {
           className="text-center mb-16">
           
           <span className="text-primary font-display text-sm font-semibold tracking-widest uppercase mb-4 block">
-            Who We Are
+           We Provide 
           </span>
           <h2 className="font-display text-4xl md:text-5xl font-bold mb-6">
             <span className="gradient-text">Intelligent Solutions</span>
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto text-lg leading-relaxed">
-            PROJECTS WE HAVE WORKED ON
-
-          </p>
+         
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
