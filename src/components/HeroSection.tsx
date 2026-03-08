@@ -8,7 +8,7 @@ const HeroSection = () => {
 
       {/* Particle Neural Network */}
       <Particles
-        className="absolute inset-0"
+        className="absolute inset-0 pointer-events-none"
         options={{
           background: { color: "transparent" },
           particles: {
@@ -27,24 +27,24 @@ const HeroSection = () => {
       />
 
       {/* Grid background */}
-      <div className="absolute inset-0 bg-grid opacity-30" />
+      <div className="absolute inset-0 bg-grid opacity-30 pointer-events-none" />
 
       {/* Gradient glow */}
-      <div className="absolute inset-0 bg-radial-glow" />
-      <div className="absolute inset-0 bg-radial-glow-purple" />
+      <div className="absolute inset-0 bg-radial-glow pointer-events-none" />
+      <div className="absolute inset-0 bg-radial-glow-purple pointer-events-none" />
 
       {/* Floating Orbs */}
       <motion.div
         animate={{ y: [-20, 20, -20], x: [-10, 10, -10] }}
         transition={{ duration: 8, repeat: Infinity }}
-        className="absolute top-1/4 left-1/4 w-72 h-72 rounded-full blur-[100px] opacity-20"
+        className="absolute top-1/4 left-1/4 w-72 h-72 rounded-full blur-[100px] opacity-20 pointer-events-none"
         style={{ background: "#00e5ff" }}
       />
 
       <motion.div
         animate={{ y: [20, -20, 20], x: [10, -10, 10] }}
         transition={{ duration: 10, repeat: Infinity }}
-        className="absolute bottom-1/4 right-1/4 w-96 h-96 rounded-full blur-[120px] opacity-20"
+        className="absolute bottom-1/4 right-1/4 w-96 h-96 rounded-full blur-[120px] opacity-20 pointer-events-none"
         style={{ background: "#8b5cf6" }}
       />
 
